@@ -1,5 +1,5 @@
 //
-//  TrailingIcon.swift
+//  TrailingIconLabelStyle.swift
 //  Scrumdinger
 //
 //  Created by YUJIN KWON on 2023/08/09.
