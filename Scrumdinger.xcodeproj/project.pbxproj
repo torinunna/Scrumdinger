@@ -71,6 +71,7 @@
 				862630A72A837A5A001FC7BD /* ScrumsView.swift */,
 				862630AB2A84D241001FC7BD /* DetailEditView.swift */,
 				862630A92A837F63001FC7BD /* DetailView.swift */,
+				862630A52A83703A001FC7BD /* TrailingIconLabelStyle.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -96,7 +97,6 @@
 			children = (
 				868669E62A826EA800D2396C /* ScrumdingerApp.swift */,
 				862630B12A84E217001FC7BD /* Views */,
-				862630A52A83703A001FC7BD /* TrailingIconLabelStyle.swift */,
 				868669F82A8298F800D2396C /* Models */,
 				868669EA2A826EA900D2396C /* Assets.xcassets */,
 				868669EC2A826EA900D2396C /* Preview Content */,
