@@ -24,6 +24,8 @@
 		86B822802A86360D0009E7BD /* ScrumProgressViewStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86B8227F2A86360D0009E7BD /* ScrumProgressViewStyle.swift */; };
 		86B822822A86381F0009E7BD /* ScrumTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86B822812A86381F0009E7BD /* ScrumTimer.swift */; };
 		86B822842A8639540009E7BD /* MeetingFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86B822832A8639540009E7BD /* MeetingFooterView.swift */; };
+		86B822862A86A19F0009E7BD /* ding.wav in Resources */ = {isa = PBXBuildFile; fileRef = 86B822852A86A19F0009E7BD /* ding.wav */; };
+		86B822892A86A1F40009E7BD /* AVPlayer+Ding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86B822882A86A1F40009E7BD /* AVPlayer+Ding.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +47,8 @@
 		86B8227F2A86360D0009E7BD /* ScrumProgressViewStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrumProgressViewStyle.swift; sourceTree = "<group>"; };
 		86B822812A86381F0009E7BD /* ScrumTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrumTimer.swift; sourceTree = "<group>"; };
 		86B822832A8639540009E7BD /* MeetingFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingFooterView.swift; sourceTree = "<group>"; };
+		86B822852A86A19F0009E7BD /* ding.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = ding.wav; sourceTree = "<group>"; };
+		86B822882A86A1F40009E7BD /* AVPlayer+Ding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AVPlayer+Ding.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,17 +65,17 @@
 		862630B12A84E217001FC7BD /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				862630A72A837A5A001FC7BD /* ScrumsView.swift */,
+				862630A32A836BCF001FC7BD /* CardView.swift */,
+				862630A52A83703A001FC7BD /* TrailingIconLabelStyle.swift */,
+				862630A92A837F63001FC7BD /* DetailView.swift */,
 				868669E82A826EA800D2396C /* MeetingView.swift */,
 				86B8227D2A86348C0009E7BD /* MeetingHeaderView.swift */,
-				86B822832A8639540009E7BD /* MeetingFooterView.swift */,
 				86B8227F2A86360D0009E7BD /* ScrumProgressViewStyle.swift */,
-				862630AF2A84E210001FC7BD /* ThemeView.swift */,
-				862630B22A850BC1001FC7BD /* ThemePicker.swift */,
-				862630A32A836BCF001FC7BD /* CardView.swift */,
-				862630A72A837A5A001FC7BD /* ScrumsView.swift */,
+				86B822832A8639540009E7BD /* MeetingFooterView.swift */,
 				862630AB2A84D241001FC7BD /* DetailEditView.swift */,
-				862630A92A837F63001FC7BD /* DetailView.swift */,
-				862630A52A83703A001FC7BD /* TrailingIconLabelStyle.swift */,
+				862630B22A850BC1001FC7BD /* ThemePicker.swift */,
+				862630AF2A84E210001FC7BD /* ThemeView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -98,6 +102,7 @@
 				868669E62A826EA800D2396C /* ScrumdingerApp.swift */,
 				862630B12A84E217001FC7BD /* Views */,
 				868669F82A8298F800D2396C /* Models */,
+				86B822872A86A1A20009E7BD /* Resources */,
 				868669EA2A826EA900D2396C /* Assets.xcassets */,
 				868669EC2A826EA900D2396C /* Preview Content */,
 			);
@@ -118,8 +123,17 @@
 				868669F62A8298F400D2396C /* Theme.swift */,
 				862630A12A83690F001FC7BD /* DailyScrum.swift */,
 				86B822812A86381F0009E7BD /* ScrumTimer.swift */,
+				86B822882A86A1F40009E7BD /* AVPlayer+Ding.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		86B822872A86A1A20009E7BD /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				86B822852A86A19F0009E7BD /* ding.wav */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -180,6 +194,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				86B822862A86A19F0009E7BD /* ding.wav in Resources */,
 				868669EE2A826EA900D2396C /* Preview Assets.xcassets in Resources */,
 				868669EB2A826EA900D2396C /* Assets.xcassets in Resources */,
 			);
@@ -207,6 +222,7 @@
 				862630A62A83703A001FC7BD /* TrailingIconLabelStyle.swift in Sources */,
 				862630B02A84E210001FC7BD /* ThemeView.swift in Sources */,
 				862630A42A836BCF001FC7BD /* CardView.swift in Sources */,
+				86B822892A86A1F40009E7BD /* AVPlayer+Ding.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
