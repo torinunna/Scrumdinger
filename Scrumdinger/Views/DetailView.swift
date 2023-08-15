@@ -52,9 +52,11 @@ struct DetailView: View {
                     Label("No meetings yet", systemImage: "calendar.badge.exclamationmark")
                 }
                 ForEach(scrum.history) { history in
-                    HStack {
-                        Image(systemName: "calendar")
-                        Text(history.date, style: .date)
+                    NavigationLink(destination: HistoryView(history: history)) {
+                        HStack {
+                            Image(systemName: "calendar")
+                            Text(history.date, style: .date)
+                        }
                     }
                 }
             }
@@ -64,8 +66,8 @@ struct DetailView: View {
             Button("Edit") {
                 isPresentingEditView = true
                 editingScrum = scrum
+                }
             }
-        }
         .sheet(isPresented: $isPresentingEditView) {
             NavigationStack {
                 DetailEditView(scrum: $editingScrum)
